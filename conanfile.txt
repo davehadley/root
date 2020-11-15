@@ -1,0 +1,11 @@
+
+[requires]
+lz4/1.9.2
+opengl/system
+libxml2/2.9.10
+glu/system
+xorg/system
+openssl/1.1.1h
+
+[generators]
+cmake

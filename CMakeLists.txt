@@ -31,6 +31,9 @@ include(cmake/modules/CaptureCommandLine.cmake)
 
 project(ROOT)
 
+include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
+conan_basic_setup()
+
 #---Set the locale to default C to prevent issued due to localization of commands---------------
 # This is necessary as we for example call `clang -v` and parse its output. But on a localized
 # program, the output parsing is much more error prone as certrain strings we're looking for
